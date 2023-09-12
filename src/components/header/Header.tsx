@@ -1,4 +1,5 @@
 import { StyledHeader, StyledHeaderMenu } from "./Header.style"
+import {Link} from 'react-router-dom'
 
 export const Header = () => {
   return (
@@ -6,13 +7,13 @@ export const Header = () => {
       <h1>Logo</h1>
       <StyledHeaderMenu>
         <li>
-          <a href="">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <a href="">Produtos</a>
+          <Link to='/produtos'>Produtos</Link>
         </li>
         <li>
-          <a href="">Contato</a>
+          <Link to='/contatos'>Contato</Link>
         </li>
       </StyledHeaderMenu>
     </StyledHeader>
